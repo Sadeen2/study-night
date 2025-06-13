@@ -1155,28 +1155,25 @@ const renderAboutPage = ()=>{
 };
 
 },{"../images/aboutImage.png":"khGba","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"khGba":[function() {},{}],"bA49a":[function(require,module,exports,__globalThis) {
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-// This file is responsible for loading the home page
-//Imports image for homepage
+// DO NOT CHANGE ANYTHING IN THIS FILE //
+// This file is responsible for loading the Home page
+// Import image for homepage using Parcel
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderHomePage", ()=>renderHomePage);
 var _homePagePng = require("../images/homePage.png");
 var _homePagePngDefault = parcelHelpers.interopDefault(_homePagePng);
-//Helper functions
+// Import helper functions for element creation
 var _utilityRenderFunctionsJs = require("./utilityRenderFunctions.js");
-//Renders home page
+// Render the Home page content
 const renderHomePage = ()=>{
-    //Gets main element
     const main = document.querySelector('main');
     main.innerHTML = '';
-    //Creates header element
     const header = (0, _utilityRenderFunctionsJs.createHeader)('h1', 'Study Night', 'home_header');
-    //Creates subheader element
     const subHeading = (0, _utilityRenderFunctionsJs.createElement)('h2', 'A Digital Study Solution for the Modern World');
-    //Creates elements
+    // Load image using Parcel
     const image = (0, _utilityRenderFunctionsJs.createImage)((0, _homePagePngDefault.default), 'Desk of laptops');
-    //Container for elements
+    image.className = 'homeImage';
     const homeContainer = document.createElement('div');
     homeContainer.className = 'homeContainer';
     homeContainer.append(header, subHeading, image);

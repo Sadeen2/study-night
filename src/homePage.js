@@ -1,33 +1,32 @@
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-// This file is responsible for loading the home page
-//Imports image for homepage
+// DO NOT CHANGE ANYTHING IN THIS FILE //
+// This file is responsible for loading the Home page
+
+// Import image for homepage using Parcel
 import homePageImage from '../images/homePage.png';
-//Helper functions
+
+// Import helper functions for element creation
 import {
   createHeader,
   createElement,
   createImage,
 } from './utilityRenderFunctions.js';
 
-//Renders home page
+// Render the Home page content
 const renderHomePage = () => {
-  //Gets main element
   const main = document.querySelector('main');
   main.innerHTML = '';
 
-  //Creates header element
   const header = createHeader('h1', 'Study Night', 'home_header');
 
-  //Creates subheader element
   const subHeading = createElement(
     'h2',
     'A Digital Study Solution for the Modern World'
   );
 
-  //Creates elements
+  // Load image using Parcel
   const image = createImage(homePageImage, 'Desk of laptops');
+  image.className = 'homeImage';
 
-  //Container for elements
   const homeContainer = document.createElement('div');
   homeContainer.className = 'homeContainer';
 

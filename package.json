@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel index.html",
     "test": "mocha",
     "cypress": "npx cypress run",
     "gulp": "gulp",
@@ -25,6 +25,4 @@
     "parcel": "^2.15.2",
     "prettier": "^3.5.3"
   }
-  
-
 }

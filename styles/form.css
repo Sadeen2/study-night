@@ -1,17 +1,7 @@
-/* Card Form Styling */
-/* TODO: Manually optimize CSS styling. */
-/* Remove unused and unnecessary styling and selectors */
-
-form {
-}
-
-form {
+/* Card Form Container */
+.cardForm {
   display: flex;
   flex-direction: column;
-}
-
-form {
-  max-width: 100px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -19,17 +9,18 @@ form {
   max-width: 400px;
 }
 
-label {
-  display: block;
+/* Labels */
+.cardForm label {
   font-weight: bold;
   margin-bottom: 8px;
   color: #333333;
 }
 
-input[type='text'] {
+/* Text Inputs */
+.cardInput {
   width: 100%;
   padding: 10px;
-  margin: 15px;
+  margin: 15px 0;
   border: 1px solid #dddddd;
   border-radius: 4px;
   font-size: 16px;
@@ -37,7 +28,8 @@ input[type='text'] {
   transition: border-color 0.3s ease;
 }
 
-input[type='submit'] {
+/* Submit Button */
+.cardSubmit {
   width: 100%;
   padding: 10px;
   background-color: gray;
@@ -45,6 +37,5 @@ input[type='submit'] {
   border-radius: 0.5rem;
   color: #ffffff;
   font-size: 1rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
