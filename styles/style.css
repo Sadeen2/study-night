@@ -10,14 +10,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-main {
-  width: 100%;
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .notVisible {
   display: none;
 }
@@ -37,3 +29,30 @@ button {
     flex-direction: row;
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+.page-image,
+.homeImage {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+

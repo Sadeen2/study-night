@@ -2,7 +2,7 @@
 // This file is responsible for loading the Home page
 
 // Import image for homepage using Parcel
-import homePageImage from '../images/homePage.png';
+import homePageImage from './images/homePage.png';
 
 // Import helper functions for element creation
 import {
